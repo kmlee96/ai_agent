@@ -1,4 +1,5 @@
 ### name of venv
 ai_agent/
 
+**/__pycache__/
 .env

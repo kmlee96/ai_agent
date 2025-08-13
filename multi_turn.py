@@ -5,12 +5,13 @@ import os
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
+model_ver = os.getenv("MODEL_VER")
 
 client = OpenAI(api_key=api_key)
 
 def get_ai_response(messages):
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=model_ver,
         temperature=0.9,
         messages=messages
     )
