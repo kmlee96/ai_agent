@@ -3,3 +3,4 @@ ai_agent/
 
 **/__pycache__/
 .env
+data/
